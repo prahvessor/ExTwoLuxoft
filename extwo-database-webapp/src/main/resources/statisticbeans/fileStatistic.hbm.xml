@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.luxoft.extwo.database.webapp.statisticbeans">
+    <class name="FileStatistic" table="FILE_STATISTIC">
+        <id name="idFile" column="ID_FILE" type="java.lang.Integer">
+            <generator class="assigned"/>
+        </id>
+        <property name="maxFileWord" column="MAX_FILE_WORD" type="java.lang.Integer"/>
+        <property name="minFileWord" column="MIN_FILE_WORD" type="java.lang.Integer"/>
+        <property name="avgFileWord" column="AVG_FILE_WORD" type="java.lang.Integer"/>
+        <property name="avgFileLineLength" column="AVG_LINE_LENGTH" type="java.lang.Integer"/>
+    </class>
+</hibernate-mapping>
