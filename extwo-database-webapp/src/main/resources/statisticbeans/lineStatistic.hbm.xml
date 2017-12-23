@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.luxoft.extwo.database.webapp.statisticbeans">
+    <class name="LineStatistic" table="LINE_STATISTIC">
+        <id name="idLine" column="ID_LINE" type="java.lang.Integer">
+            <generator class="assigned"/>
+        </id>
+        <property name="idFile" column="ID_FILE" type="java.lang.Integer"/>
+        <property name="longestWord" column="LONGEST_WORD" type="java.lang.Integer"/>
+        <property name="shortestWord" column="SHORTEST_WORD" type="java.lang.Integer"/>
+        <property name="avgWord" column="AVG_WORD" type="java.lang.Integer"/>
+        <property name="lineLength" column="LINE_LENGTH" type="java.lang.Integer"/>
+        <many-to-one name="fileStatistic" class="FileStatistic" insert="false" update="false">
+            <column name="ID_FILE" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

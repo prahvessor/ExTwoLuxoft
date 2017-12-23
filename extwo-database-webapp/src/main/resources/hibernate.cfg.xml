@@ -15,6 +15,7 @@
 		<property name="hbm2ddl.auto">validate</property>
 		
 		<mapping resource="statisticbeans/fileStatistic.hbm.xml"/>
+		<mapping resource="statisticbeans/lineStatistic.hbm.xml"/>
 	
 	</session-factory>
 </hibernate-configuration>

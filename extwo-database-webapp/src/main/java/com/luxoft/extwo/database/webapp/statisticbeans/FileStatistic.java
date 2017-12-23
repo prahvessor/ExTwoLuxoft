@@ -10,7 +10,7 @@ public class FileStatistic {
     private int shortestFileWord;
     private int avgFileWord;
     private int avgFileLineLength;
-//    private Set<LineStatistic> lineStatistics = new HashSet<>(0);
+    private Set<LineStatistic> lineStatistics = new HashSet<LineStatistic>(0);
 
     public FileStatistic() {
     }
@@ -31,10 +31,10 @@ public class FileStatistic {
     public int getIdFile() {
         return idFile;
     }
-    public int getMaxFileWord() {
+    public int getLongestFileWord() {
         return longestFileWord;
     }
-    public int getMinFileWord() {
+    public int getShortestFileWord() {
         return shortestFileWord;
     }
     public int getAvgFileWord() {
@@ -43,18 +43,18 @@ public class FileStatistic {
     public int getAvgFileLineLength() {
         return avgFileLineLength;
     }
-//    public Set<LineStatistic> getLineStatistics() {
-//        return lineStatistics;
-//    }
-
+    public Set<LineStatistic> getLineStatistics() {
+        return lineStatistics;
+    }
+    
     public void setIdFile(int idFile) {
         this.idFile = idFile;
     }
-    public void setMaxFileWord(int maxFileWord) {
-        this.longestFileWord = maxFileWord;
+    public void setLongestFileWord(int longestFileWord) {
+        this.longestFileWord = longestFileWord;
     }
-    public void setMinFileWord(int minFileWord) {
-        this.shortestFileWord = minFileWord;
+    public void setShortestFileWord(int shortestFileWord) {
+        this.shortestFileWord = shortestFileWord;
     }
     public void setAvgFileWord(int avgFileWord) {
         this.avgFileWord = avgFileWord;
@@ -62,7 +62,7 @@ public class FileStatistic {
     public void setAvgFileLineLength(int avgFileLineLength) {
         this.avgFileLineLength = avgFileLineLength;
     }
-//    public void setLineStatistics(Set<LineStatistic> lineStatistics) {
-//        this.lineStatistics = lineStatistics;
-//    }
+    public void setLineStatistics(Set<LineStatistic> lineStatistics) {
+        this.lineStatistics = lineStatistics;
+    }
 }

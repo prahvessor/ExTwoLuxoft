@@ -8,9 +8,15 @@
         <id name="idFile" column="ID_FILE" type="java.lang.Integer">
             <generator class="assigned"/>
         </id>
-        <property name="maxFileWord" column="MAX_FILE_WORD" type="java.lang.Integer"/>
-        <property name="minFileWord" column="MIN_FILE_WORD" type="java.lang.Integer"/>
+        <property name="longestFileWord" column="LONGEST_FILE_WORD" type="java.lang.Integer"/>
+        <property name="shortestFileWord" column="SHORTEST_FILE_WORD" type="java.lang.Integer"/>
         <property name="avgFileWord" column="AVG_FILE_WORD" type="java.lang.Integer"/>
         <property name="avgFileLineLength" column="AVG_LINE_LENGTH" type="java.lang.Integer"/>
+        <set name="lineStatistics" table="LINE_STATISTIC">
+            <key>
+                <column name="ID_FILE"/>
+            </key>
+            <one-to-many class="LineStatistic"/>
+        </set>
     </class>
 </hibernate-mapping>
