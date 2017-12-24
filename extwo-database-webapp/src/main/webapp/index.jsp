@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>File Statistics Viewer</title>
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
-    <%--<link rel="stylesheet" type="text/css" href="style.css" />--%>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
 

@@ -4,3 +4,10 @@
 Spring MVC controllers
 - Implement frontend part - display list of files, and statistic per line for selected file. Usage of ReactJS
 framework is encouraged. In other case any other JS framework can be used
+
+### README before start
+use the SQL-instructions in 
+```
+/src/main/resouces
+```
+for creating and filling tables

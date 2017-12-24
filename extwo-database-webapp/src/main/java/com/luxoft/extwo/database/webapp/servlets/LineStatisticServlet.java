@@ -1,6 +1,5 @@
 package com.luxoft.extwo.database.webapp.servlets;
 
-
 import com.luxoft.extwo.database.webapp.statisticdao.LineStatisticDAO;
 
 import javax.servlet.ServletException;

@@ -1,6 +1,10 @@
 package com.luxoft.extwo.database.webapp.statisticbeans;
 
-public class LineStatistic {
+import java.io.Serializable;
+
+public class LineStatistic implements Serializable{
+
+    private static final long serialVersionUID = -1L;
 
     private int idLine;
     private int idFile;
@@ -20,11 +24,6 @@ public class LineStatistic {
         this.shortestWord = minWord;
         this.avgWord = avgWord;
         this.lineLength = lineLength;
-    }
-
-    @Override
-    public String toString() {
-        return "[id:" + idLine + ", idFile:" + idFile + ", longestWord:" + longestWord + ", shortestWord:" + shortestWord + ", avgWord:" + avgWord + ", lineLength:" + lineLength +"]";
     }
 
     public int getIdLine() {

@@ -1,9 +1,12 @@
 package com.luxoft.extwo.database.webapp.statisticbeans;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-public class FileStatistic {
+public class FileStatistic implements Serializable{
+
+    private static final long serialVersionUID = -2L;
 
     private int idFile;
     private int longestFileWord;
@@ -21,11 +24,6 @@ public class FileStatistic {
         this.shortestFileWord = shortestFileWord;
         this.avgFileWord = avgFileWord;
         this.avgFileLineLength = avgFileLineLength;
-    }
-
-    @Override
-    public String toString() {
-        return "id:" + idFile + ", longestFileWord:" + longestFileWord + ", shortestFileWord:" + shortestFileWord + ", avgFileWord:" +avgFileWord + ", avgFileLineLength:" + avgFileLineLength;
     }
 
     public int getIdFile() {
