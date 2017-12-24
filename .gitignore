@@ -7,3 +7,9 @@ bin
 # Eclipse files
 .classpath
 .project
+
+# IDEA folder
+.idea
+
+#IDEA files
+*.iml
