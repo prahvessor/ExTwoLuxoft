@@ -1,29 +1,28 @@
-package com.luxoft.extwo.database.webapp.statisticbeans;
+package com.luxoft.extwo.database.webapp.statisticdao;
 
 import com.luxoft.extwo.database.webapp.hiberutils.HiberUtil;
+import com.luxoft.extwo.database.webapp.statisticbeans.FileStatistic;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.criterion.Restrictions;
 
 import java.sql.SQLException;
 import java.util.List;
 
-public class LineStatisticDAO {
-    private static int id;
+public class FileStatisticDAO {
 
-    public static List<LineStatistic> getLineStatistic() throws SQLException, ClassNotFoundException {
+    public static List<FileStatistic> getFileStatistic() throws SQLException, ClassNotFoundException {
 
         SessionFactory sessionFactory = HiberUtil.getSessionFactory();
         Session session = sessionFactory.openSession();
-        List<LineStatistic> lineStatistic = null;
+        List<FileStatistic> fileStatistic = null;
 
         try {
             session.beginTransaction();
 
-            Criteria criteriaLine = session.createCriteria(LineStatistic.class);
-            lineStatistic = criteriaLine.add(Restrictions.eq("idFile", id)).list();
-
+            Criteria criteriaFile = session.createCriteria(FileStatistic.class);
+            fileStatistic = criteriaFile.list();
+            
             session.getTransaction().commit();
 
         }catch (Exception e) {
@@ -33,11 +32,6 @@ public class LineStatisticDAO {
             session.close();
         }
 
-        return lineStatistic;
-
-    }
-
-    public static void setId(int id) {
-        LineStatisticDAO.id = id;
+        return fileStatistic;
     }
 }

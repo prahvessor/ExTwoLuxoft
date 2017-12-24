@@ -1,7 +1,7 @@
 package com.luxoft.extwo.database.webapp.servlets;
 
 
-import com.luxoft.extwo.database.webapp.statisticbeans.FileStatisticDAO;
+import com.luxoft.extwo.database.webapp.statisticdao.FileStatisticDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
