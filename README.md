@@ -11,3 +11,9 @@ use the SQL-instructions in
 /src/main/resouces
 ```
 for creating and filling tables
+OR
+follow instructions in README in TaskOne
+```
+https://github.com/prahvessor/TaskOneLuxoft
+```
+to use calculation results for viewing

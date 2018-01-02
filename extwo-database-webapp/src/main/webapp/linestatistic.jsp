@@ -6,8 +6,8 @@
     <tr>
         <th>id line</th>
         <th>id file</th>
-        <th>maximal word</th>
-        <th>minimal word</th>
+        <th>longest word</th>
+        <th>shortest word</th>
         <th>average word</th>
         <th>line length</th>
     </tr>
